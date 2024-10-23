@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "FanslyDeviceHooker",
+  "description": "Fansly Device Id Hooker Extension",
+  "version": "1.0",
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://fansly.com/*",
+    "https://apiv3.fansly.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
